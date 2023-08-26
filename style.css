@@ -1,0 +1,322 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: sans-serif;
+     color: #E9ECEF;
+}
+
+body {
+     scroll-behavior: smooth;
+}
+
+/* nav bar */
+nav {
+     width: 85%;
+     margin: auto;
+     padding: 25px 0;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     border-radius: 20px;
+     box-shadow: 0px 5px 25px rgba(128, 0, 0, 0.6), 0px 5px 25px rgba(0, 0, 80, 0.6);
+}
+
+nav ul li {
+     list-style: none;
+     display: inline-block;
+     margin: 0 1rem;
+}
+
+nav ul li a {
+     text-decoration: none;
+     text-transform: uppercase;
+     color: #ADB5BD;
+     font-weight: bold;
+}
+
+nav ul li a:hover {
+     font-size: larger;
+     font-weight: bolder;
+     transition: 0.3s;
+     color: #CED4DA;
+}
+
+.btn{
+     padding: 10px;
+     color: #495057;
+     font-weight: bold;
+     font-size: large;
+     background-color: #ffffff00;
+     border: 2px solid red;
+     border-radius: 10px;
+}
+.btn:hover{
+     cursor: pointer;
+     font-size: large;
+     font-weight: bold;
+     transition: 0.3s;
+     color: #CED4DA;
+     background-color: red;
+}
+
+/* nav bar ends */
+
+.banner1 {
+     background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("./background_avengers1366x768.jpg");
+     height: 110vh;
+     width: 100%;
+     background-size: cover;
+     background-position: center;
+     border-bottom: 2px solid #495057;
+
+}
+
+.banner1>div {
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+}
+.name{
+     padding: 5px;
+     border: 2px solid red;
+     border-radius: 5px;
+     margin-top: 2.5px;
+     color: rgb(177, 177, 177);
+     font-weight: 700;
+}
+
+.container1 {
+     background-image: url("./capital2.jpg");
+}
+
+.container2 {
+     background-image: url("./iron2.jpg");
+}
+
+
+.banner2 {
+     background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("./background_glaxy_1366x768.jpg");
+     height: 100vh;
+     width: 100%;
+     background-size: cover;
+     background-position: center;
+     border-bottom: 2px solid #495057;
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+}
+
+.container3 {
+     background-image: url("./thor.jpg");
+}
+
+.container4 {
+     background-image: url("./hulk1.jpg");
+}
+
+
+.banner3 {
+     background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("./background_avenger_1366x768.jpg");
+     height: 100vh;
+     width: 100%;
+     background-size: cover;
+     background-position: center;
+     border-bottom: 2px solid #495057;
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+}
+
+.container5 {
+     background-image: url("./thanos.jpg");
+
+}
+
+.container6 {
+     background-image: url("./nick2.jpg");
+
+}
+.banner4 {
+     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("./background_avengers3-1336x768.jpg");
+     height: 100vh;
+     width: 100%;
+     background-size: cover;
+     background-position: center;
+     border-bottom: 2px solid #495057;
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+}
+.container7 {
+     background-image: url("./spider2.jpg");
+
+}
+
+.con {
+     opacity: 0.2;
+     height: 400px;
+     width: 400px;
+     background-position: center;
+     background-size: cover;
+     border: 5px inset #CED4DA;
+     border-radius: 1rem;
+}
+
+.con:hover {
+     opacity: 1;
+     cursor: pointer;
+     transition: 0.2s;
+}
+
+footer {
+     background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("./footer.jpg");
+     background-size: 100% 100%;
+     height: 50vh;
+     display: grid;
+     grid-template-columns: 2fr 1fr;
+     justify-content: center;
+     align-items: center;
+}
+
+.about>p {
+     padding: 1rem;
+}
+
+.flex {
+     display: flex;
+     align-items: center;
+     justify-content: space-evenly;
+     grid-area: 2/1/2/3;
+}
+
+
+#captain {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     width: 50%;
+
+}
+.container1:active {
+     /* background-image: url("./ant.jpg"); */
+     /* background-image: none; */
+     background-image: url("./capital2.jpg"), url("./capital.jpg");
+     background-blend-mode: multiply;
+     opacity: 1;
+}
+
+#iron {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     width: 50%;
+}
+
+.container1:active {
+     background-image: url("./capital2.jpg"), url("./capital.jpg");
+     background-blend-mode: multiply;
+     background-color: #ffffff00;
+}
+.container2:active {
+     background-image: url("./iron2.jpg"), url("./iron.jpg");
+     background-blend-mode: screen;
+     background-color: #ffffff00;
+}
+
+#thor {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     width: 50%;
+}
+.container3:active {
+     background-image: url("./thor_2.jpg"), url("./thor.jpg");
+     background-blend-mode: screen;
+     background-color: #ffffff00;
+}
+
+
+#hulk {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     width: 50%;
+}
+.container4:active {
+     background-image: url("./hulk2.jpg"), url("./hulk1.jpg");
+     background-blend-mode: exclusion;
+     background-color: #ffffff00;
+}
+
+#thanos {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     width: 50%;
+}
+.container5:active {
+     background-image: url("./thanos2.jpg"), url("./thanos.jpg");
+     background-blend-mode: multiply;
+     background-color: #ffffff00;
+}
+
+#nick {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     width: 50%;
+}
+.container6:active {
+     background-image: url("./nick.jpg"), url("./nick2.jpg");
+     background-blend-mode: hard-light;
+     background-color: #ffffff00;
+}
+
+#spiderman {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     width: 50%;
+}
+.container7:active {
+     background-image: url("./spider.jpg"), url("./spider2.jpg");
+     background-blend-mode: screen;
+     background-color: #ffffff00;
+}
+
+#comment{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     width: 50%;
+}
+#comment>button{
+     margin-top: 5px;
+}
+#comment>textarea{
+     border: 5px inset #CED4DA;
+     border-radius: 1rem;
+     padding: 10px;
+     color: #CED4DA;
+     background-color: #495057;
+     font-size: large;
+     font-weight: bold;
+}
+#comment>img{
+     width: 150px;     
+     opacity: 0.3;
+     cursor: pointer;
+}
+#comment>img:hover{
+     opacity: 1;
+     transition: 0.4s;
+}
